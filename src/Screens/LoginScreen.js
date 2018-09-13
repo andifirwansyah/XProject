@@ -23,7 +23,7 @@ import CircleInput from "../Components/CircleInput";
 
 export default class LoginScreen extends Component {
   Home = () => {
-    return
+    this.props.navigation.navigate('homeStack')
   }
   render() {
     return (
