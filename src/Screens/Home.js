@@ -8,7 +8,6 @@ import material from "../../theme/variables/material";
 
 // TODO
 //     - Split Component
-//     - Fix Border Radius
 
 class Home extends Component {
     render(){
@@ -40,24 +39,9 @@ class Home extends Component {
                         </Text>
                         {/* <Right /> */}
                     {/* </Body> */}
-                    <Card style={{borderRadius : 15}} transparent>
-                            <CardItem cardBody first style={{ borderRadius: 15 }}>
-                                <ImageBackground source={{ uri: 'https://picsum.photos/500/600?image=1061' }} style={{ borderRadius: 15,height: 200, width: null, flex: 1 }}>
-                                    <Body style={{padding: 15}}  >
-                                        <Text style={{color:"#fff",fontSize: 20}} >Nama Tempat</Text>
-                                        <Text>
-                                            <Icon style={{ color: "#fff", fontSize: 20 }} name="star" />
-                                            <Icon style={{ color: "#fff", fontSize: 20 }} name="star" />
-                                            <Icon style={{ color: "#fff", fontSize: 20 }} name="star" />
-                                            <Icon style={{ color: "#fff", fontSize: 20 }} name="star" />
-                                        </Text>
-                                    </Body>
-                                </ImageBackground>
-                        </CardItem>
-                    </Card>
                         <Card borderRadius={15} style={{ borderRadius: 15 }} transparent>
                             <CardItem cardBody style={{ borderRadius: 15 }}>
-                                <ImageBackground source={{ uri: 'https://picsum.photos/500/600?image=1061' }} style={{ borderRadius: 15, height: 200, width: null, flex: 1 }}>
+                                <ImageBackground imageStyle={{ borderRadius: 15 }} source={{ uri: 'https://picsum.photos/500/600?image=1061' }} style={{ borderRadius: 15, height: 200, width: null, flex: 1 }}>
                                     <Body style={{ padding: 15 }}  >
                                         <Text style={{ color: "#fff", fontSize: 20 }} >Nama Tempat</Text>
                                         <Text>
@@ -70,38 +54,51 @@ class Home extends Component {
                                 </ImageBackground>
                             </CardItem>
                         </Card>
-                        
-                    <Card borderRadius={15} style={{ borderRadius: 15 }} transparent>
-                        <CardItem cardBody style={{ borderRadius: 15 }}>
-                            <ImageBackground source={{ uri: 'https://picsum.photos/500/600?image=1061' }} style={{ borderRadius: 15, height: 200, width: null, flex: 1 }}>
-                                <Body style={{ padding: 15 }}  >
-                                    <Text style={{ color: "#fff", fontSize: 20 }} >Nama Tempat</Text>
-                                    <Text>
-                                        <Icon style={{ color: "#fff", fontSize: 20 }} name="star" />
-                                        <Icon style={{ color: "#fff", fontSize: 20 }} name="star" />
-                                        <Icon style={{ color: "#fff", fontSize: 20 }} name="star" />
-                                        <Icon style={{ color: "#fff", fontSize: 20 }} name="star" />
-                                    </Text>
-                                </Body>
-                            </ImageBackground>
-                        </CardItem>
-                    </Card>
-                    
-                <Card borderRadius={15} style={{ borderRadius: 15 }} transparent>
-                    <CardItem cardBody style={{ borderRadius: 15 }}>
-                        <ImageBackground source={{ uri: 'https://picsum.photos/500/600?image=1061' }} style={{ borderRadius: 15, height: 200, width: null, flex: 1 }}>
-                            <Body style={{ padding: 15 }}  >
-                                <Text style={{ color: "#fff", fontSize: 20 }} >Nama Tempat</Text>
-                                <Text>
-                                    <Icon style={{ color: "#fff", fontSize: 20 }} name="star" />
-                                    <Icon style={{ color: "#fff", fontSize: 20 }} name="star" />
-                                    <Icon style={{ color: "#fff", fontSize: 20 }} name="star" />
-                                    <Icon style={{ color: "#fff", fontSize: 20 }} name="star" />
-                                </Text>
-                            </Body>
-                        </ImageBackground>
-                    </CardItem>
-                </Card>
+                        <Card borderRadius={15} style={{ borderRadius: 15 }} transparent>
+                            <CardItem cardBody style={{ borderRadius: 15 }}>
+                                <ImageBackground imageStyle={{ borderRadius: 15 }} source={{ uri: 'https://picsum.photos/500/600?image=1061' }} style={{ borderRadius: 15, height: 200, width: null, flex: 1 }}>
+                                    <Body style={{ padding: 15 }}  >
+                                        <Text style={{ color: "#fff", fontSize: 20 }} >Nama Tempat</Text>
+                                        <Text>
+                                            <Icon style={{ color: "#fff", fontSize: 20 }} name="star" />
+                                            <Icon style={{ color: "#fff", fontSize: 20 }} name="star" />
+                                            <Icon style={{ color: "#fff", fontSize: 20 }} name="star" />
+                                            <Icon style={{ color: "#fff", fontSize: 20 }} name="star" />
+                                        </Text>
+                                    </Body>
+                                </ImageBackground>
+                            </CardItem>
+                        </Card>
+                        <Card borderRadius={15} style={{ borderRadius: 15 }} transparent>
+                            <CardItem cardBody style={{ borderRadius: 15 }}>
+                                <ImageBackground imageStyle={{ borderRadius: 15 }} source={{ uri: 'https://picsum.photos/500/600?image=1061' }} style={{ borderRadius: 15, height: 200, width: null, flex: 1 }}>
+                                    <Body style={{ padding: 15 }}  >
+                                        <Text style={{ color: "#fff", fontSize: 20 }} >Nama Tempat</Text>
+                                        <Text>
+                                            <Icon style={{ color: "#fff", fontSize: 20 }} name="star" />
+                                            <Icon style={{ color: "#fff", fontSize: 20 }} name="star" />
+                                            <Icon style={{ color: "#fff", fontSize: 20 }} name="star" />
+                                            <Icon style={{ color: "#fff", fontSize: 20 }} name="star" />
+                                        </Text>
+                                    </Body>
+                                </ImageBackground>
+                            </CardItem>
+                        </Card>
+                        <Card borderRadius={15} style={{ borderRadius: 15 }} transparent>
+                            <CardItem cardBody style={{ borderRadius: 15 }}>
+                                <ImageBackground imageStyle={{ borderRadius: 15 }} source={{ uri: 'https://picsum.photos/500/600?image=1061' }} style={{ borderRadius: 15, height: 200, width: null, flex: 1 }}>
+                                    <Body style={{ padding: 15 }}  >
+                                        <Text style={{ color: "#fff", fontSize: 20 }} >Nama Tempat</Text>
+                                        <Text>
+                                            <Icon style={{ color: "#fff", fontSize: 20 }} name="star" />
+                                            <Icon style={{ color: "#fff", fontSize: 20 }} name="star" />
+                                            <Icon style={{ color: "#fff", fontSize: 20 }} name="star" />
+                                            <Icon style={{ color: "#fff", fontSize: 20 }} name="star" />
+                                        </Text>
+                                    </Body>
+                                </ImageBackground>
+                            </CardItem>
+                        </Card>
                 </Content>
             </Container>
             </StyleProvider>
