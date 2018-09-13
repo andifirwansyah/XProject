@@ -4,6 +4,7 @@ import { Container,Content,Header,Text,StyleProvider,Body,Left,Right,Button,Icon
 import { Constants } from "expo";
 import getTheme from "../../theme/components/index";
 import material from "../../theme/variables/material";
+import commonColor from "../../theme/variables/commonColor";
 
 
 // TODO
@@ -14,7 +15,7 @@ class Home extends Component {
         return (
             <StyleProvider style={getTheme(material)}>
                 <Container style={{  backgroundColor:'#f2f4f7'}}>
-                <Header transparent style={{paddingLeft:10,paddingRight:10,paddingTop:20,paddingBottom:10}}>
+                <Header transparent style={{paddingLeft:10,paddingRight:10,paddingTop:20,paddingBottom:5,height:70}}>
                         <Left style={{flex : 1}} >
                             <Button transparent>
                                 <Icon style={{color: "#000",fontSize:30}} color="#000" type="MaterialIcons" name='sort' />
