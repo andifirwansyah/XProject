@@ -42,7 +42,7 @@ class Home extends Component {
                     {/* </Body> */}
                         <Card borderRadius={15} style={{ borderRadius: 15 }} transparent>
                             <CardItem cardBody style={{ borderRadius: 15 }}>
-                                <ImageBackground imageStyle={{ borderRadius: 15 }} source={{ uri: 'https://picsum.photos/500/600?image=1061' }} style={{ borderRadius: 15, height: 200, width: null, flex: 1 }}>
+                                <ImageBackground imageStyle={{ borderRadius: 15 }} source={{ uri: 'https://loremflickr.com/320/240/beach,sea?random=1' }} style={{ borderRadius: 15, height: 200, width: null, flex: 1 }}>
                                     <Body style={{ padding: 15 }}  >
                                         <Text style={{ color: "#fff", fontSize: 20 }} >Nama Tempat</Text>
                                         <Text>
@@ -57,7 +57,7 @@ class Home extends Component {
                         </Card>
                         <Card borderRadius={15} style={{ borderRadius: 15 }} transparent>
                             <CardItem cardBody style={{ borderRadius: 15 }}>
-                                <ImageBackground imageStyle={{ borderRadius: 15 }} source={{ uri: 'https://picsum.photos/500/600?image=1061' }} style={{ borderRadius: 15, height: 200, width: null, flex: 1 }}>
+                                <ImageBackground imageStyle={{ borderRadius: 15 }} source={{ uri: 'https://loremflickr.com/320/240/beach,sea?random=2' }} style={{ borderRadius: 15, height: 200, width: null, flex: 1 }}>
                                     <Body style={{ padding: 15 }}  >
                                         <Text style={{ color: "#fff", fontSize: 20 }} >Nama Tempat</Text>
                                         <Text>
@@ -72,7 +72,7 @@ class Home extends Component {
                         </Card>
                         <Card borderRadius={15} style={{ borderRadius: 15 }} transparent>
                             <CardItem cardBody style={{ borderRadius: 15 }}>
-                                <ImageBackground imageStyle={{ borderRadius: 15 }} source={{ uri: 'https://picsum.photos/500/600?image=1061' }} style={{ borderRadius: 15, height: 200, width: null, flex: 1 }}>
+                                <ImageBackground imageStyle={{ borderRadius: 15 }} source={{ uri: 'https://loremflickr.com/320/240/beach,sea?random=3' }} style={{ borderRadius: 15, height: 200, width: null, flex: 1 }}>
                                     <Body style={{ padding: 15 }}  >
                                         <Text style={{ color: "#fff", fontSize: 20 }} >Nama Tempat</Text>
                                         <Text>
@@ -87,7 +87,7 @@ class Home extends Component {
                         </Card>
                         <Card borderRadius={15} style={{ borderRadius: 15 }} transparent>
                             <CardItem cardBody style={{ borderRadius: 15 }}>
-                                <ImageBackground imageStyle={{ borderRadius: 15 }} source={{ uri: 'https://picsum.photos/500/600?image=1061' }} style={{ borderRadius: 15, height: 200, width: null, flex: 1 }}>
+                                <ImageBackground imageStyle={{ borderRadius: 15 }} source={{ uri: 'https://loremflickr.com/320/240/beach,sea?random=4' }} style={{ borderRadius: 15, height: 200, width: null, flex: 1 }}>
                                     <Body style={{ padding: 15 }}  >
                                         <Text style={{ color: "#fff", fontSize: 20 }} >Nama Tempat</Text>
                                         <Text>
