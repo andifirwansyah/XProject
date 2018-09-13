@@ -4,7 +4,7 @@ import { Container,Content,Header,Text,StyleProvider,Body,Left,Right,Button,Icon
 import { Constants } from "expo";
 import getTheme from "../../theme/components/index";
 import material from "../../theme/variables/material";
-import commonColor from "../../theme/variables/commonColor";
+
 
 
 // TODO
