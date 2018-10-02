@@ -5,7 +5,7 @@ import { Constants } from "expo";
 import getTheme from "../../theme/components/index";
 import material from "../../theme/variables/material";
 
-
+import CardWisata from '../Components/CardWisata';
 
 // TODO
 //     - Split Component
@@ -34,72 +34,29 @@ class Home extends Component {
                         </Right>
                 </Header>
                 <Content padder>
-                    {/* <Body> */}
-                        <Text>
-                            Destinasi Wisata Favorit!
-                        </Text>
-                        {/* <Right /> */}
-                    {/* </Body> */}
-                        <Card borderRadius={15} style={{ borderRadius: 15 }} transparent>
-                            <CardItem cardBody style={{ borderRadius: 15 }}>
-                                <ImageBackground imageStyle={{ borderRadius: 15 }} source={{ uri: 'https://loremflickr.com/320/240/beach,sea?random=1' }} style={{ borderRadius: 15, height: 200, width: null, flex: 1 }}>
-                                    <Body style={{ padding: 15 }}  >
-                                        <Text style={{ color: "#fff", fontSize: 20 }} >Nama Tempat</Text>
-                                        <Text>
-                                            <Icon style={{ color: "#fff", fontSize: 20 }} name="star" />
-                                            <Icon style={{ color: "#fff", fontSize: 20 }} name="star" />
-                                            <Icon style={{ color: "#fff", fontSize: 20 }} name="star" />
-                                            <Icon style={{ color: "#fff", fontSize: 20 }} name="star" />
-                                        </Text>
-                                    </Body>
-                                </ImageBackground>
-                            </CardItem>
-                        </Card>
-                        <Card borderRadius={15} style={{ borderRadius: 15 }} transparent>
-                            <CardItem cardBody style={{ borderRadius: 15 }}>
-                                <ImageBackground imageStyle={{ borderRadius: 15 }} source={{ uri: 'https://loremflickr.com/320/240/beach,sea?random=2' }} style={{ borderRadius: 15, height: 200, width: null, flex: 1 }}>
-                                    <Body style={{ padding: 15 }}  >
-                                        <Text style={{ color: "#fff", fontSize: 20 }} >Nama Tempat</Text>
-                                        <Text>
-                                            <Icon style={{ color: "#fff", fontSize: 20 }} name="star" />
-                                            <Icon style={{ color: "#fff", fontSize: 20 }} name="star" />
-                                            <Icon style={{ color: "#fff", fontSize: 20 }} name="star" />
-                                            <Icon style={{ color: "#fff", fontSize: 20 }} name="star" />
-                                        </Text>
-                                    </Body>
-                                </ImageBackground>
-                            </CardItem>
-                        </Card>
-                        <Card borderRadius={15} style={{ borderRadius: 15 }} transparent>
-                            <CardItem cardBody style={{ borderRadius: 15 }}>
-                                <ImageBackground imageStyle={{ borderRadius: 15 }} source={{ uri: 'https://loremflickr.com/320/240/beach,sea?random=3' }} style={{ borderRadius: 15, height: 200, width: null, flex: 1 }}>
-                                    <Body style={{ padding: 15 }}  >
-                                        <Text style={{ color: "#fff", fontSize: 20 }} >Nama Tempat</Text>
-                                        <Text>
-                                            <Icon style={{ color: "#fff", fontSize: 20 }} name="star" />
-                                            <Icon style={{ color: "#fff", fontSize: 20 }} name="star" />
-                                            <Icon style={{ color: "#fff", fontSize: 20 }} name="star" />
-                                            <Icon style={{ color: "#fff", fontSize: 20 }} name="star" />
-                                        </Text>
-                                    </Body>
-                                </ImageBackground>
-                            </CardItem>
-                        </Card>
-                        <Card borderRadius={15} style={{ borderRadius: 15 }} transparent>
-                            <CardItem cardBody style={{ borderRadius: 15 }}>
-                                <ImageBackground imageStyle={{ borderRadius: 15 }} source={{ uri: 'https://loremflickr.com/320/240/beach,sea?random=4' }} style={{ borderRadius: 15, height: 200, width: null, flex: 1 }}>
-                                    <Body style={{ padding: 15 }}  >
-                                        <Text style={{ color: "#fff", fontSize: 20 }} >Nama Tempat</Text>
-                                        <Text>
-                                            <Icon style={{ color: "#fff", fontSize: 20 }} name="star" />
-                                            <Icon style={{ color: "#fff", fontSize: 20 }} name="star" />
-                                            <Icon style={{ color: "#fff", fontSize: 20 }} name="star" />
-                                            <Icon style={{ color: "#fff", fontSize: 20 }} name="star" />
-                                        </Text>
-                                    </Body>
-                                </ImageBackground>
-                            </CardItem>
-                        </Card>
+                    <Text>
+                        Destinasi Wisata Favorit!
+                    </Text>
+                    <CardWisata
+                        source={{ uri: 'https://loremflickr.com/320/240/beach,sea?random=1' }}
+                        nameplace="Pantai Tanjung Bira"
+                        rating={5}>
+                    </CardWisata>
+                    <CardWisata
+                        source={{ uri: 'https://loremflickr.com/320/240/beach,sea?random=2' }}
+                        nameplace="Pantai Lemo-Lemo"
+                        rating={3}>
+                    </CardWisata>
+                    <CardWisata
+                        source={{ uri: 'https://loremflickr.com/320/240/beach,sea?random=3' }}
+                        nameplace="Pantai Apparalang"
+                        rating={0}>
+                    </CardWisata>
+                    <CardWisata
+                        source={{ uri: 'https://loremflickr.com/320/240/beach,sea?random=4' }}
+                        nameplace="Pantai Kasuso"
+                        rating={2}>
+                    </CardWisata>
                 </Content>
             </Container>
             </StyleProvider>
