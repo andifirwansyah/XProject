@@ -15,18 +15,18 @@ const Headers = (props) => {
         <Header transparent style={{ ...defaultHeaderStyle,...props.style }}>
             <Left style={{ flex: 1 }} >
                 <Button transparent>
-                    <Icon style={{ ...defaultIconStyle,...props.style }} color="#000" type="MaterialIcons" name={props.iconLeft} onPress={props.onPressLeft} />
+                    <Icon style={{...defaultIconStyle,...props.style}} color="#000" type="MaterialIcons" name={props.iconLeft} onPress={props.onPressLeft} />
                 </Button>
             </Left>
             <Body style={{ flex: 1 }} >
-                <Title style={{ ...defaultIconStyle,...props.style }}>{props.title}</Title>
+                <Title style={{...defaultTitleStyle,...props.styleTitle}}>{props.title}</Title>
             </Body>
             <Right style={{ flex: 1 }} >
                 <Button transparent>
-                    <Icon style={{ ...defaultIconStyle,...props.style }} type="MaterialIcons" color="#000" name={props.iconBody} onPress={props.onPressBody} />
+                    <Icon style={{...defaultIconStyle,...props.style}} type="MaterialIcons" color="#000" name={props.iconBody} onPress={props.onPressBody} />
                 </Button>
                 <Button transparent>
-                    <Icon style={{ ...defaultIconStyle,...props.style }} type="MaterialIcons" color="#000" name={props.iconRight} onPress={props.onPressRight} />
+                    <Icon style={{...defaultIconStyle,...props.style}} type="MaterialIcons" color="#000" name={props.iconRight} onPress={props.onPressRight} />
                 </Button>
             </Right>
         </Header>
@@ -39,6 +39,10 @@ const defaultHeaderStyle = {
     paddingTop: 20, 
     paddingBottom: 5, 
     height: 70
+}
+const defaultTitleStyle = {
+    color: "#000",
+    fontSize: 30
 }
 const defaultIconStyle = {
     color: "#000", 
