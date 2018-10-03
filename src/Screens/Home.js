@@ -5,6 +5,7 @@ import { Constants } from "expo";
 import getTheme from "../../theme/components/index";
 import material from "../../theme/variables/material";
 
+import Headers from '../Components/Headers';
 import CardWisata from '../Components/CardWisata';
 
 // TODO
@@ -15,24 +16,14 @@ class Home extends Component {
         return (
             <StyleProvider style={getTheme(material)}>
                 <Container style={{  backgroundColor:'#f2f4f7'}}>
-                <Header transparent style={{paddingLeft:10,paddingRight:10,paddingTop:20,paddingBottom:5,height:70}}>
-                        <Left style={{flex : 1}} >
-                            <Button transparent>
-                                <Icon style={{color: "#000",fontSize:30}} color="#000" type="MaterialIcons" name='sort' />
-                            </Button>
-                        </Left>
-                        <Body style={{flex : 1}} >
-                            <Title style={{ color: "#000",fontSize:30}}>Hello</Title>
-                        </Body>
-                        <Right style={{flex : 1}} >
-                            <Button transparent>
-                                <Icon style={{color: "#000",fontSize:30}} type="MaterialIcons" color="#000" name='notifications' />
-                            </Button>
-                            <Button transparent>
-                                <Icon style={{color: "#000",fontSize:30}} type="MaterialIcons" color="#000" name='search' />
-                            </Button>
-                        </Right>
-                </Header>
+                <Headers
+                    title="Hello"
+                    iconLeft="sort"
+                    iconBody="notifications"
+                    iconRight="search"
+                    onPressLeft={() => alert("A")}
+                    onPressBody={() => alert("B")}
+                    onPressRight={() => alert("C")}/>
                 <Content padder>
                     <Text>
                         Destinasi Wisata Favorit!
