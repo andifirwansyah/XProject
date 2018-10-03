@@ -33,7 +33,7 @@ const CardWisata = (props) => {
             <CardItem cardBody style={{ borderRadius: 15 }}>
                 <ImageBackground imageStyle={{ borderRadius: 15 }} source={props.source} style={{ borderRadius: 15, height: 200, width: null, flex: 1 }}>
                     <Body style={{ padding: 15 }}  >
-                        <Text style={{ color: "#fff", fontSize: 20 }} >{props.nameplace}</Text>
+                        <Text style={{ color: "#fff", fontSize: 20 }} onPress={props.onPress}>{props.nameplace}</Text>
                         <Text style={{paddingTop:5}} rating={props.rating}>
                             { stars }
                         </Text>
