@@ -12,6 +12,9 @@ import CardWisata from '../Components/CardWisata';
 //     - Split Component
 
 class Home extends Component {
+    Page = () => {
+        this.props.navigation.navigate('pageStack')
+    } 
     render(){
         return (
             <StyleProvider style={getTheme(material)}>
@@ -29,6 +32,7 @@ class Home extends Component {
                         Destinasi Wisata Favorit!
                     </Text>
                     <CardWisata
+                        onPress={() => this.Page()}
                         source={{ uri: 'https://loremflickr.com/320/240/beach,sea?random=1' }}
                         nameplace="Pantai Tanjung Bira"
                         rating={5}>
