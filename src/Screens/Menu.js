@@ -13,7 +13,7 @@ class Menu extends Component {
                 <Container style={{ backgroundColor: "rgb(59, 134, 255)" }}>
                     <Header transparent style={{ paddingLeft: 10, paddingRight: 10, paddingTop: 20, paddingBottom: 5, height: 70 }}>
                         <Left style={{ flex: 1 }} >
-                            <Button transparent>
+                            <Button transparent onPress={() => this.props.navigation.goBack()} >
                                 <Icon style={{ color: "#fff", fontSize: 30 }} color="#fff" type="MaterialIcons" name='arrow-back' />
                             </Button>
                         </Left>

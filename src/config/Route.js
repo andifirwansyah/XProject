@@ -1,11 +1,15 @@
 import { createStackNavigator } from "react-navigation";
+import { fromLeft } from "react-navigation-transitions";
 import Login from "../Screens/LoginScreen";
 import Home from "../Screens/Home";
+import Menu from "../Screens/Menu";
 
 export const HomeStack = createStackNavigator({
-    home: Home
+    home: Home,
+    menu: Menu
 }, {
-        headerMode: 'none'
+        headerMode: 'none',
+        transitionConfig: () => fromLeft()
     })
 
 
