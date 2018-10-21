@@ -26,7 +26,7 @@ const CardWisata = (props) => {
         if (i > props.rating) {
             star = require('../img/star-unfilled.png');
         }
-        stars.push((<Image style={styles.starsStyle} source={star}/>))
+        stars.push((<Image key={i} style={styles.starsStyle} source={star}/>))
     }
     return(
         <Card borderRadius={15} style={{ borderRadius: 15 }} transparent>

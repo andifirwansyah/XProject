@@ -17,7 +17,7 @@ class Home extends Component {
                 <Container style={{  backgroundColor:'#f2f4f7'}}>
                 <Header transparent style={{paddingLeft:10,paddingRight:10,paddingTop:20,paddingBottom:5,height:70}}>
                         <Left style={{flex : 1}} >
-                            <Button transparent>
+                            <Button transparent onPress={() => this.props.navigation.navigate("menu")} >
                                 <Icon style={{color: "#000",fontSize:30}} color="#000" type="MaterialIcons" name='sort' />
                             </Button>
                         </Left>
